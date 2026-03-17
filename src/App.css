@@ -1,0 +1,105 @@
+:root {
+  --bg-color: #0a0a0a;
+  --text-color: #ffffff;
+  --accent-color: #ffffff;
+  --muted-text: #888888;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --font-primary: 'Space Grotesk', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+body {
+  font-family: var(--font-primary);
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+  color: var(--muted-text);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 100px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  border: 1px solid var(--text-color);
+}
+
+.btn-primary {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--text-color);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-color);
+}
+
+.btn-secondary:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+.highlight {
+  color: var(--text-color);
+  font-weight: 600;
+}

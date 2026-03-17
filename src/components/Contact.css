@@ -1,0 +1,74 @@
+.contact {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact .section-title {
+  justify-content: center;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-desc {
+  font-size: 1.1rem;
+  margin-bottom: 48px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.contact-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+}
+
+.contact-btn:hover {
+  border-color: var(--text-color);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.copied-tooltip {
+  position: absolute;
+  right: -100px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+  .copied-tooltip {
+    right: 0;
+    top: -40px;
+  }
+}

@@ -1,0 +1,42 @@
+.about {
+  min-height: auto;
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-title .mono {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  color: var(--muted-text);
+  font-weight: 400;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  justify-content: center;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  max-width: 650px;
+  text-align: center;
+}
